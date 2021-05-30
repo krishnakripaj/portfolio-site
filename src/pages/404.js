@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-export default function Contact() {
+export default function NotFound() {
   return (
     <Layout>
-      <div>Contact</div>
+      <div>Not found what you looking for</div>
     </Layout>
   )
 }
