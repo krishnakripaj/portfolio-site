@@ -4,17 +4,27 @@ import { Link } from "gatsby"
 export default function NavBar() {
   return (
     <header>
-      {/* <nav>
-        <div>
-          <a href="/" className="active">
-            Home
-          </a>
-          <a href="/teaching">Teaching</a>
-          <a href="/teaching/courses">Courses</a>
-          <a href="/about">Bio</a>
-          <a href="/contact">Contact</a>
-        </div>
-      </nav> */}
+      <nav>
+        <ul>
+          <li>
+            <a href="/" className="active">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/teaching">Teaching</a>
+          </li>
+          <li>
+            <a href="/teaching/courses">Courses</a>
+          </li>
+          <li>
+            <a href="/about">Bio</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }

@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@700&family=Viga&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700");
 @import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 
 * {
   margin: 0;
@@ -15,76 +14,68 @@ html,
 body {
   height: 100%;
   background-color: #f5edec;
-  font-family: Lato, sans-serif;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.99),
-      rgba(250, 238, 250, 0.88),
-      rgba(250, 238, 250, 0.78),
-      rgba(250, 238, 250, 0.88),
-      rgba(255, 255, 255, 0.78),
-      rgba(255, 255, 255, 0.68)
-    ),
-    url(/pexels-photo-2088170.jpeg) no-repeat center center fixed;
-  background-size: cover;
-  min-height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  font-family: Roboto, sans-serif;
+  background: url(/bg.jpg) no-repeat;
+  /* background-size: cover; */
 }
 
 main {
   height: calc(100% - (70px + 40px));
-  /* background-color: thistle; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+footer {
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-size: 14px;
 }
 
 header {
   height: 70px;
-  /* background-color: tomato; */
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Viga", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-footer {
-  /* background-color: teal; */
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #560238;
-  font-family: "Viga", sans-serif;
-}
-
-header .logo {
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 2em;
-  letter-spacing: 2px;
-}
-
-header div {
+nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header div a {
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
   list-style: none;
   margin-left: 20px;
   text-decoration: none;
-  padding: 6px 15px;
-  color: #560238;
-  border-radius: 10px;
+  color: black;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-size: 14px;
 }
 
-header div a.active,
-header div a:hover {
-  background: #9f2c75;
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul li a.active {
   color: white;
 }

@@ -7,17 +7,39 @@ export default function Home() {
     <Layout>
       <main>
         <div className={style.banner}>
-          <img
-            className="animate__animated animate__fadeIn animate__fast"
-            src="/me.png"
-          />
+          <div>
+            <img
+              className="animate__animated animate__fadeIn animate__slow"
+              src="/profile.png"
+            />
+            <p className="quote animate__animated animate__fadeIn animate__slow">
+              " I always thought the idea of education was to learn to think for
+              yourself " - Dead Poets Society
+            </p>
+          </div>
+
           <h2 className="animate__animated animate__pulse animate__fast">
-            Krishnakripa Jayakumar
+            Krishna<span>kripa Jay</span>akumar
           </h2>
-          <h3 className="animate__animated animate__pulse animate__fast">
+          <h3 className="animate__animated animate__fadeIn animate__slow">
             Educator
           </h3>
-          <a href="https://www.linkedin.com/in/kripajayakumar/" target="_blank">View my CV</a>
+          <a
+            href="https://www.linkedin.com/in/kripajayakumar/"
+            rel="noreferrer"
+            target="_blank"
+            className={style.btnBlackYellow}
+            className="animate__animated animate__fadeIn animate__slow"
+          >
+            Click here for my resume
+          </a>
+        </div>
+        <div className="banner-img">
+          <img
+            className="animate__animated animate__pulse animate__fast"
+            src="/teacher.png"
+            style={{ width: "75%" }}
+          />
         </div>
       </main>
     </Layout>
