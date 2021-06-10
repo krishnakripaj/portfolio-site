@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export default function NavBar() {
   return (
     <header>
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             <a href="/" className="active">
@@ -24,7 +24,7 @@ export default function NavBar() {
             <a href="/contact">Contact</a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </header>
   )
 }
