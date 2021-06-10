@@ -5,7 +5,7 @@ import "../styles/global.css"
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Kripa Jay</title>
@@ -19,6 +19,6 @@ export default function Layout({ children }) {
       <footer>
         <p> 2021 &copy; Krishnakripa J</p>
       </footer>
-    </div>
+    </>
   )
 }
