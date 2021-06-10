@@ -17,7 +17,7 @@ export default function Layout({ children }) {
       <NavBar />
       {children}
       <footer>
-        <p> 2021 &copy; Krishnakripa J</p>
+         <p> Copyright &copy; 2021 Krishnakripa J</p>
       </footer>
     </>
   )
