@@ -225,21 +225,49 @@
       </article>
       <section class="block block-contact block--light">
         <div class="container">
-          <h2>Get in touch with me</h2>
-          <form action="https://formspree.io/f/xkneozkr" method="POST">
-            <!-- <label for="email">Your email:</label> -->
-            <input type="text" name="email" id="email">
-            <label for="message">Your message:</label>
-            <textarea name="message"></textarea>
-            <button type="submit">Send</button>
-          </form>
+          <div class="grid grid--col-2">
+            <div class="contact__text">
+              <h2>Get in touch with me</h2>
+              <h3>If you want to talk to me about your research interests, your
+                course modules, technical stuff, offer feedback or suggestions or simply have a conversation, hop on to
+                the form, and type away
+                to me! </h3>
+              <h3>Anonymous feedback is also welcome. </h3>
+              <!-- <p>I get
+                excited
+                when someone pings me!</p> -->
+
+            </div>
+            <div>
+              <form action="https://formspree.io/f/xkneozkr" method="POST">
+                <div class="form-group">
+                  <label for="name">Your name:</label>
+                  <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Your email:</label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your message:</label>
+                  <textarea name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </section>
   </main>
   <footer class="footer">
     <p>Copyright &copy; Kripa Jayakumar 2022</p>
-    <section class="grid footer__socials"> <i class="fa-brands fa-instagram"></i></section>
+    <section class="footer__socials">
+      <a href=""><i class="fa-brands fa-github"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+    </section>
 
   </footer>
   <script src="js/main.js"></script>

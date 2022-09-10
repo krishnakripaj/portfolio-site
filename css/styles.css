@@ -1,8 +1,7 @@
 @import url(normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&family=Source+Serif+Pro&display=swap');
 :root {
   --color-primary: #638a91;
   --color-secondary: #cfd2cf;
@@ -64,6 +63,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+i {
+  color: var(--color-secondary);
 }
 
 /* Lists */
@@ -559,7 +562,7 @@ flex-basis: 0;
 
 .card-achievement h3::before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  /* font-weight: 900; */
   content: "\f091\00a0 ";
   color: var(--color-primary);
 }
@@ -600,16 +603,86 @@ flex-basis: 0;
   padding: 2rem 0;
 }
 
-.footer .grid {
-
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 .footer p {
   text-align: center;
+  color: var(--color-secondary);
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     grid-area: 2 /2;
+  }
+}
+
+/* Form Elements */
+
+label {
+  display: block;
+  margin-bottom: 0.7rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%;
+  border: 1px solid var(--color-secondary);
+  border-radius: 4px;
+  padding: 0.8rem 1.7rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 6px var(--color-secondary);
+}
+
+textarea {
+  padding-top: 1.5rem;
+  height: 12rem;
+  resize: none;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  background: var(--color-background-dark);
+  color: var(--color-secondary);
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  width: 10rem;
+}
+
+button:hover {
+  background: #011015;
+  color: var(--color-background-light);
+}
+
+/* Contact */
+
+.block-contact h3 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+  .block-contact h3 {
+
+    width: 84%;
   }
 }
