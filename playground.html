@@ -1,0 +1,65 @@
+<p>
+  " I always thought the idea of education was to learn to think for yourself "
+  - Dead Poets Society
+</p>
+
+<div class="grid grid__col-2">
+  <div class="heading">
+    <h1>Krishna<span>kripa jay</span>akumar</h1>
+  </div>
+  <div class="img">
+    <img src="images/kripa.jpg" alt="" />
+  </div>
+</div>
+
+<style>
+  .grid {
+    display: grid;
+    height: 80vh;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .grid__col-2 {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .heading {
+    justify-self: end;
+    font-size: 30px;
+    text-align: end;
+    font-family: "Courier Prime", monospace;
+    color: var(--color-tertiary);
+  }
+
+  .heading p {
+    font-size: 1.3rem;
+    color: var(--color-secondary);
+  }
+
+  .img {
+    justify-self: start;
+  }
+
+  .img img {
+    margin-left: 2rem;
+    width: 100%;
+    max-width: 210px;
+    border-radius: 50%;
+  }
+
+  .img p {
+    color: var(--color-body);
+  }
+
+  .heading h1 span {
+    color: var(--color-secondary);
+    font-size: 103px;
+    font-family: "Liu Jian Mao Cao", cursive;
+    margin: 5px;
+  }
+
+  p {
+    color: var(--color-secondary);
+  }
+</style>
