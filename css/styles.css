@@ -1,7 +1,7 @@
 @import url(normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&family=Source+Serif+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&family=Source+Serif+Pro&display=swap");
 :root {
   --color-primary: #638a91;
   --color-secondary: #cfd2cf;
@@ -264,6 +264,10 @@ i {
   padding: 5rem 2rem;
 }
 
+.block h2 {
+  margin: 2rem 0rem;
+}
+
 .block--light {
   background: white;
 }
@@ -408,13 +412,6 @@ flex-basis: 0;
 
 .block-about h2 {
   color: var(--color-background-dark);
-  margin-bottom: 2rem;
-}
-
-/* Block Experience */
-
-.block-experience h2 {
-  margin-bottom: 2rem;
 }
 
 /* Card Experience */
@@ -430,33 +427,61 @@ flex-basis: 0;
   border-top: 2px solid var(--color-background-light);
 }
 
-.card-experience h3 {
-  color: var(--color-background-dark);
-  font-family: var(--sans-font);
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
 .card-experience__content {
   flex-shrink: 0;
-  flex-basis: 85%;
+  flex-basis: 80%;
   margin-left: 1rem;
   margin-right: -2rem;
 }
 
-.card-experience__course {
+.card-experience__uni,
+.card-experience__post {
+  color: var(--color-background-dark);
+  font-family: var(--sans-font);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-experience__local {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.card-experience__course,
+.card-experience__company {
+  margin-top: 1rem;
   font-size: 1.7rem;
   color: var(--color-background-dark);
 }
 
-.card-experience__description {
-  font-size: 1.6rem;
+.card-experience__course::before,
+.card-experience__company::before {
+  content: "\2014\00a0";
+}
+
+.card-experience__award {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+.card-experience__award::before {
+  font-size: 1.5rem;
+  font-family: var(--sans-font);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\00a0\00a0\00a0\00a0\f559\00a0";
   color: var(--color-primary);
 }
 
-.card-experience__course::before {
-  content: "\2014\00a0";
+/* .card-experience__award::after {
+  font-size: 1.5rem;
+  content: ")";
+} */
+
+.card-experience__description {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: var(--color-primary);
 }
 
 .card-experience__year {
@@ -466,13 +491,18 @@ flex-basis: 0;
 }
 
 @media screen and (min-width: 768px) {
+  /* .card-experience.education {
+    flex-direction: row;
+  } */
   .card-experience {
     flex-direction: row;
+    /* min-height: 170px; */
   }
-  .card-experience__year {
+
+  /* .education .card-experience__year {
     margin-right: 1rem;
     color: var(--color-background-dark);
-  }
+  } */
 }
 
 /* Block Work */
@@ -543,7 +573,7 @@ flex-basis: 0;
   flex-wrap: wrap;
   flex-direction: column;
   padding: 2rem 0;
-  gap: 2rem;
+  gap: 5rem 2rem;
 }
 
 .card-achievement {
@@ -556,7 +586,7 @@ flex-basis: 0;
   font-family: var(--sans-font);
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
 
@@ -569,25 +599,31 @@ flex-basis: 0;
 
 .card-achievement__org {
   font-size: 1.8rem;
-  color: var(--color-background-dark);
-  /* font-weight: bold; */
+  color: var(--color-primary);
 }
 
 .card-achievement__award {
   font-size: 1.8rem;
-  color: var(--color-primary);
+  color: var(--color-background-dark);
+  font-style: italic;
+  margin-bottom: 1rem;
   /* font-weight: bold; */
 }
 
+/* .card-achievement__award::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0 ";
+} */
+
 .card-achievement__description {
-  font-size: 1.6rem;
+  font-size: 1.5 rem;
   color: var(--color-background-dark);
   font-style: italic;
 }
 
 .card-achievement__year {
+  margin-top: 0.3rem;
   font-size: 1.6rem;
-  color: var(--color-background-dark);
+  color: var(--color-primary);
 }
 
 @media screen and (min-width: 768px) {
@@ -678,11 +714,11 @@ button:hover {
   margin: 2rem 0;
   font-size: 2rem;
   line-height: 1.7;
+  font-family: var(--sans-font);
 }
 
 @media screen and (min-width: 768px) {
   .block-contact h3 {
-
     width: 84%;
   }
 }
