@@ -330,7 +330,8 @@ flex-basis: 0;
   font-family: "Courier Prime", monospace;
   color: var(--color-tertiary);
   font-size: 3rem;
-  margin-top: 0;
+  /* margin-top: 0; */
+  margin: 0 1rem;
 }
 
 /* .block-landing__heading p {
@@ -446,7 +447,7 @@ flex-basis: 0;
   flex-shrink: 0;
   flex-basis: 80%;
   margin-left: 1rem;
-  margin-right: -2rem;
+  /* margin-right: -2rem; */
 }
 
 .card-experience__uni,
@@ -531,7 +532,7 @@ flex-basis: 0;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  width: 80%;
+  /* width: 80%; */
   margin: 2rem auto;
 }
 
@@ -561,7 +562,7 @@ flex-basis: 0;
   text-align: center;
   background: white;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.1;
 }
 
@@ -894,7 +895,7 @@ button:hover {
   text-align: center;
   font-size: 1.5rem;
   margin: 0;
-  width: 80%;
+  /* width: 80%; */
   text-align: center;
   position: relative;
   left: 50%;
