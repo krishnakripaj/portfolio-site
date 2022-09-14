@@ -146,7 +146,7 @@ i {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -558,10 +558,11 @@ flex-basis: 0;
   top: 50%; /* position the top  edge of the element at the middle of the parent */
   left: 50%; /* position the left edge of the element at the middle of the parent */
   transform: translate(-50%, -50%);
-  font-size: 2rem;
   text-align: center;
   background: white;
   padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.1;
 }
 
 /* 
@@ -583,6 +584,7 @@ flex-basis: 0;
   }
   .block-overlay-item p {
     position: absolute;
+    font-size: 2rem;
   }
 }
 
@@ -773,7 +775,7 @@ button:hover {
   transform: translateX(-50%);
   text-align: center;
   font-size: 2rem;
-  width: 80%;
+  /* width: 80%; */
   margin: 1rem 0;
 }
 
