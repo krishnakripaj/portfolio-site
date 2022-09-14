@@ -322,16 +322,16 @@ i {
   border-radius: 50%;
 }
 
-/* .block-landing__heading {
-flex-basis: 0;
-} */
+.block-landing__heading {
+  margin: 0 1rem;
+}
 
 .block-landing__heading h1 {
   font-family: "Courier Prime", monospace;
   color: var(--color-tertiary);
   font-size: 3rem;
-  /* margin-top: 0; */
-  margin: 0 1rem;
+  margin-top: 0;
+  /* margin: 0 1rem; */
 }
 
 /* .block-landing__heading p {
