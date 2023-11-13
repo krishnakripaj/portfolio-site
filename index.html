@@ -11,7 +11,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="images/favicon_io/site.webmanifest">
   <script src="https://kit.fontawesome.com/ca06faa9ff.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 
 <body class="grid grid__body ">
@@ -21,7 +24,7 @@
         <a href="." class="nav__brand"><img src="images/logo.png" alt="" /></a>
         <i class="fa-solid fa-bars fa-2x nav__menu icon icon--primary"></i>
       </div>
-      <ul class="list nav__list collapsible__content">
+      <ul class="list nav__list collapsible__content" data-aos="zoom-in-right" data-aos-delay="2000">
         <li class="nav__item">
           <a href="."><i class="fa-solid fa-house"></i><span>Home</span></a>
         </li>
@@ -39,14 +42,16 @@
   </header>
   <main>
     <section class="grid__body--content ">
-      <section class="block-landing">
-        <div class="block-landing__image">
+      <section class="block-landing header" id="your-element-selector" style="width: 100%; ">
+        <div class="block-landing__image " data-aos="fade-right" data-aos-delay="900" data-aos-duration="1500">
           <img src="images/kripa.jpg" alt="" />
         </div>
         <div class="block-landing__heading">
-          <p class="block-landing__heading--short-text" style="color:var(--color-secondary);">Hey, It's me</p>
-          <h1>Krishna<span>kripa jay</span>akumar</h1>
-          <p class="block-landing__heading--long-text">
+          <p class="block-landing__heading--short-text" style="color:var(--color-secondary);" data-aos-delay="400"
+            data-aos="fade-down">Hey, It's me</p>
+          <h1 data-aos="fade-left" data-aos-delay="400">Krishna<span>kripa
+              jay</span>akumar</h1>
+          <p data-aos="fade-right" data-aos-delay="700" class="block-landing__heading--long-text">
             Educator | Software Engineer | Cyber Sec & Digital Forensics Enthusiast
           </p>
           <!-- <p class="block-landing__heading--long-text" >An <span style="background: var(--color-secondary); color:var(--color-background-dark); padding: 4px 5px;">educator</span> who teaches others to use code to solve problems of their own 👩‍💻</p>
@@ -79,8 +84,8 @@
       <article id="block-experience" class="block block-experience block--light">
         <div class="container grid grid--col-2">
           <div>
-            <h2>Education</h2>
-            <div class="block-experience__content">
+            <h2 data-aos="zoom-out">Education</h2>
+            <div class="block-experience__content" data-aos="fade-right">
               <div class="card-experience education">
                 <div class="card-experience__content">
                   <h3 class="card-experience__uni">University of Westminster, UK</h3>
@@ -118,8 +123,8 @@
             </div>
           </div>
           <div style="text-align: left">
-            <h2>Experience</h2>
-            <div class="block-experience__content">
+            <h2 data-aos="zoom-out">Experience</h2>
+            <div class="block-experience__content" data-aos="fade-left">
               <div class="card-experience">
                 <div class="card-experience__content">
                   <h3 class="card-experience__post">Visiting Lecturer</h3>
@@ -174,25 +179,26 @@
         </div>
       </article>
       <article id="block-work" class="block block-work">
-        <h2>Things I've been upto</h2>
-        <p class="block-work__description">There are a few things I love. I love studying, I love teaching young
+        <h2 data-aos="fade-down">Things I've been upto</h2>
+        <p class="block-work__description" data-aos="fade-down">There are a few things I love. I love studying, I love
+          teaching young
           brilliant minds, I love to write (I pen an occasional poem time to time ;) ) You can check out some of the
           stuff I've been upto by clicking on the below links.
         </p>
         <div class="container grid grid__work">
-          <div class="block-overlay-item">
+          <div class="block-overlay-item" data-aos="flip-down">
             <a href="/academic.html">
               <img src="images/grad.jpg" alt="">
               <p>Academic Portfolio</p>
             </a>
           </div>
-          <div class="block-overlay-item">
+          <div class="block-overlay-item" data-aos="flip-down" data-aos-delay="300">
             <a href="/workshops.html">
               <img src="images/professional-etiquette.jpg" alt="">
               <p>Workshops & Speaking</p>
             </a>
           </div>
-          <div class="block-overlay-item">
+          <div class="block-overlay-item" data-aos="flip-down" data-aos-delay="600">
             <a href="https://medium.com/@kripajayakumar" target="_blank">
               <img src="images/writing.jpg" alt="">
               <!-- Photo by <a href="https://unsplash.com/@thoughtcatalog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thought Catalog</a> on <a href="https://unsplash.com/s/photos/writing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
@@ -203,15 +209,16 @@
       </article>
       <article id="block-achievements" class="block block-achievements block--light">
         <div class="container">
-          <h2>Achievements</h2>
-          <div class="card-achievements">
+          <h2 data-aos="fade-right"> Achievements</h2>
+          <div class="card-achievements" data-aos="fade-left">
 
             <div class="card-achievement">
               <div class="card-achievement__content">
                 <h3>Academic Excellence Award</h3>
                 <p class="card-achievement__award"> Gold Medal</p>
                 <p class="card-achievement__org">IIT</p>
-                <p class="card-achievement__description">Dr.Gamini Wickramasinghe Gold Medal for academic excellence during MSc. course of study.
+                <p class="card-achievement__description">Dr.Gamini Wickramasinghe Gold Medal for academic excellence
+                  during MSc. course of study.
                 </p>
                 <p class="card-achievement__year">2022</p>
               </div>
@@ -222,7 +229,8 @@
                 <h3>NBQSA National ICT Award</h3>
                 <p class="card-achievement__award"> Gold (Postgraduate Category)</p>
                 <p class="card-achievement__org">NBQSA</p>
-                <p class="card-achievement__description">Awarded Gold for the 'Project Xaivier' that was built as a product during MSc.
+                <p class="card-achievement__description">Awarded Gold for the 'Project Xaivier' that was built as a
+                  product during MSc.
                 </p>
                 <p class="card-achievement__year">2022</p>
               </div>
@@ -341,7 +349,7 @@
       <section class="block block-contact block--light">
         <div class="container">
           <div class="grid grid--col-2">
-            <div class="contact__text">
+            <div class="contact__text" data-aos="fade-right">
               <h2>Get in touch with me</h2>
               <h3>If you want to talk to me about your research interests, your
                 course modules, technical stuff, offer feedback or suggestions or simply have a conversation, hop on to
@@ -353,7 +361,7 @@
                 when someone pings me!</p> -->
 
             </div>
-            <div>
+            <div data-aos="fade-left">
               <form name="contact" method="POST" data-netlify="true">
                 <div class="form-group">
                   <label for="name">Your name:</label>
@@ -388,6 +396,18 @@
 
   </footer>
   <script src="js/main.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 20,
+      delay: 100,
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false
+    });
+
+  </script>
 </body>
+
 
 </html>
