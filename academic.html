@@ -59,6 +59,7 @@
                     spreading knowledge to the next generation</p>
 
                 </p>
+                <p><a href="resources/Kripa - Resume.pdf">Click Here for my Resume</a></p>
             </section>
             <section class="page__content">
                 <section class="pblock pblock-teaching">
@@ -175,8 +176,9 @@
                     <div class="pblock-education__content">
                         <h3>Work Experience</h3>
                         <ul class="list-group">
+                            <li>SOC Analyst - Connex Information Technologies</li>
                             <li>Visiting Lecturer - IIT, NIBM, AMDT</li>
-                            <li>Associate Technical Lead - 99X Tehnology (99x)</li>
+                            <li>Associate Technical Lead - 99X Technology (99x)</li>
                         </ul>
                     </div>
                 </section>
@@ -207,34 +209,42 @@
                     <h2>Gallery</h2>
                     <div class="pblock-gallery__content">
                         <div class="gallery-content">
-                            <img src="images/nbqsa-2.jpg" alt="">
+                            <img id="gimg-1" src="/images/nbqsa-2.jpg"
+                                alt="Receiving Gold Award in Postgraduate Category at the NBQSA Ceremony (2022)">
                             <p>Receiving Gold Award in Postgraduate Category at the NBQSA Ceremony (2022)</p>
                         </div>
                         <div class="gallery-content">
-                            <img src="images/gold.JPG" alt="">
+                            <img id="gimg-2" src="/images/gold.JPG"
+                                alt="Receiving Dr. Gamini Wickramasinghe Gold Medal for Academic Excellence (2022)">
                             <p>Receiving Dr. Gamini Wickramasinghe Gold Medal for Academic Excellence (2022)</p>
                         </div>
                         <div class="gallery-content">
-                            <img src="images/grad-2.jpg" alt="">
+                            <img id="gimg-3" src="images/grad-2.jpg"
+                                alt="Receiving University of Westminster Best All-round Student Award (2015)">
                             <p>Receiving University of Westminster Best All-round Student Award (2015)</p>
                         </div>
                         <div class="gallery-content">
-                            <img src="images/nbqsa.jpg" alt="">
+                            <img id="gimg-4" src="images/nbqsa.jpg"
+                                alt="Merit award for Bachelors research project (2015)">
                             <p>Merit award for Bachelors research project (2015)</p>
                         </div>
                         <div class="gallery-content">
-                            <img src="images/grad-3.jpg" alt="">
+                            <img id="gimg-5" src="images/grad-3.jpg" alt="Bachelors Graduation (2015)">
                             <p>Bachelors Graduation (2015)</p>
                         </div>
                         <div class="gallery-content">
-                            <img src="images/class.jpg" alt="">
+                            <img id="gimg-6" src="images/class.jpg" alt="My first class of students (2018)">
                             <p>My first class of students (2018)</p>
                         </div>
                         <div class="gallery-content">
-                            <img src="images/ce.jpg" alt="">
+                            <img id="gimg-7" src="images/ce.jpg" alt="Receiving academic excellence award (2015)">
                             <p>Receiving academic excellence award (2015)</p>
                         </div>
+
                     </div>
+
+
+
                 </section>
                 <section class="pblock pblock-contact">
                     <h2>Contact Details</h2>
@@ -252,7 +262,11 @@
                 </section>
             </section>
         </section>
-        </section>
+        <div id="gallery-modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="modal-caption"></div>
+        </div>
     </main>
     <script src="js/main.js"></script>
 </body>
